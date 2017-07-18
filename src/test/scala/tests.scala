@@ -2,58 +2,38 @@ import org.scalatest.{BeforeAndAfter, FunSuite}
 
 class SmallNumberTest extends FunSuite with BeforeAndAfter {
 
-before {
-  Main.outlineL = ""
-  Main.outlineS = ""
-  Main.output(1325)
-}
 
   test("Long Output") {
-    println(Main.outlineL)
-    assert(Main.outlineL == "1 thousand 3 hundred twenty five")
+
+    assert(Main.output(1325) == "one thousand three hundred twenty five")
   }
   test("Short Output") {
-    println(Main.outlineS)
-    assert(Main.outlineS == "1 thousand 3 hundred twenty five")
+
+    assert(Main.output(1325)  == "one thousand three hundred twenty five")
   }
 
 }
 
 class MediumNumberTest extends FunSuite with BeforeAndAfter {
 
-  before {
-    Main.outlineL = ""
-    Main.outlineS = ""
-    Main.output(75262734035L)
-  }
-
   test("Long Output") {
-    println(Main.outlineL)
-    assert(Main.outlineL == "75 milliard 262 million 734 thousand thirty five")
+    assert(Main.output(75262734035L) == "seventy five milliard two hundred sixty two million seven hundred thirty four thousand thirty five")
   }
   test("Short Output") {
-    println(Main.outlineS)
-    assert(Main.outlineS == "75 billion 262 million 734 thousand thirty five")
-
+    val shortScalee = Main.output(75262734035L).replaceAll("billion", "trillion").replaceAll("milliard", "billion")
+    assert(shortScalee == "seventy five billion two hundred sixty two million seven hundred thirty four thousand thirty five")
   }
 }
 
 class LongNumberTest extends FunSuite with BeforeAndAfter {
 
-  before {
-    Main.outlineL = ""
-    Main.outlineS = ""
-    Main.output(11262373450325L)
-  }
+
 
   test("Long Output") {
-    println(Main.outlineL)
-    assert(Main.outlineL == "11 billion 262 milliard 373 million 450 thousand 3 hundred twenty five")
+    assert(Main.output(11262373450325L) == "eleven billion two hundred sixty two milliard three hundred seventy three million four hundred fifty thousand three hundred twenty five")
   }
   test("Short Output") {
-    println(Main.outlineS)
-    assert(Main.outlineS == "11 trillion 262 billion 373 million 450 thousand 3 hundred twenty five")
-
+    assert(Main.output(11262373450325L) == "eleven trillion two hundred sixty two billion three hundred seventy three million four hundred fifty thousand three hundred twenty five")
   }
 }
 
