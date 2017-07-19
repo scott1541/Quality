@@ -5,13 +5,77 @@
 [debug] 	refresh = false
 [debug] resolving dependencies for configuration 'compile'
 [debug] == resolving dependencies for default#quality-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#quality-build;0.1-SNAPSHOT->org.wartremover#sbt-wartremover;2.1.1 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[info] Resolving org.wartremover#sbt-wartremover;2.1.1 ...
+[debug] sbt-chain: Checking cache for: dependency: org.wartremover#sbt-wartremover;2.1.1 {compile=[default(compile)]}
+[info] Resolving org.wartremover#sbt-wartremover;2.1.1 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: org.wartremover#sbt-wartremover;2.1.1 {compile=[default(compile)]}
+[debug] 		tried https://repo.typesafe.com/typesafe/ivy-releases/org.wartremover/sbt-wartremover/scala_2.10/sbt_0.13/2.1.1/ivys/ivy.xml
+[debug] CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.wartremover/sbt-wartremover/scala_2.10/sbt_0.13/2.1.1/ivys/ivy.xml
+[debug] 	typesafe-ivy-releases: no ivy file found for org.wartremover#sbt-wartremover;2.1.1
+[debug] 		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.wartremover/sbt-wartremover/scala_2.10/sbt_0.13/2.1.1/ivys/ivy.xml
+[debug] CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.wartremover/sbt-wartremover/scala_2.10/sbt_0.13/2.1.1/ivys/ivy.xml
+[debug] 	sbt-plugin-releases: no ivy file found for org.wartremover#sbt-wartremover;2.1.1
+[debug] 		tried C:\Users\Administrator\.ivy2\local\org.wartremover\sbt-wartremover\scala_2.10\sbt_0.13\2.1.1\ivys\ivy.xml
+[debug] 	local: no ivy file found for org.wartremover#sbt-wartremover;2.1.1
+[debug] 		tried https://repo1.maven.org/maven2/org/wartremover/sbt-wartremover_2.10_0.13/2.1.1/sbt-wartremover-2.1.1.pom
+[debug] 	public: found md file for org.wartremover#sbt-wartremover;2.1.1
+[debug] 		=> https://repo1.maven.org/maven2/org/wartremover/sbt-wartremover_2.10_0.13/2.1.1/sbt-wartremover-2.1.1.pom (2.1.1)
+[debug] downloading https://repo1.maven.org/maven2/org/wartremover/sbt-wartremover_2.10_0.13/2.1.1/sbt-wartremover-2.1.1.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/wartremover/sbt-wartremover_2.10_0.13/2.1.1/sbt-wartremover-2.1.1.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/wartremover/sbt-wartremover_2.10_0.13/2.1.1/sbt-wartremover-2.1.1.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/wartremover/sbt-wartremover_2.10_0.13/2.1.1/sbt-wartremover-2.1.1.pom
+[debug] 	[SUCCESSFUL ] org.wartremover#sbt-wartremover;2.1.1!sbt-wartremover.pom(pom.original) (62ms)
+[debug] 		tried https://repo.typesafe.com/typesafe/ivy-releases/org.wartremover/sbt-wartremover/2.1.1/jars/sbt-wartremover.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.wartremover/sbt-wartremover/2.1.1/jars/sbt-wartremover.jar
+[debug] 		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.wartremover/sbt-wartremover/2.1.1/jars/sbt-wartremover.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.wartremover/sbt-wartremover/2.1.1/jars/sbt-wartremover.jar
+[debug] 		tried C:\Users\Administrator\.ivy2\local\org.wartremover\sbt-wartremover\2.1.1\jars\sbt-wartremover.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/wartremover/sbt-wartremover/2.1.1/sbt-wartremover-2.1.1.jar
+[debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/wartremover/sbt-wartremover/2.1.1/sbt-wartremover-2.1.1.jar
+[debug] 	found org.wartremover#sbt-wartremover;2.1.1 in public
+[debug] == resolving dependencies default#quality-build;0.1-SNAPSHOT->org.wartremover#sbt-wartremover;2.1.1 [compile->runtime]
+[debug] == resolving dependencies default#quality-build;0.1-SNAPSHOT->org.wartremover#sbt-wartremover;2.1.1 [compile->compile]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] == resolving dependencies default#quality-build;0.1-SNAPSHOT->org.wartremover#sbt-wartremover;2.1.1 [compile->master]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
 [debug] resolving dependencies for configuration 'runtime'
 [debug] == resolving dependencies for default#quality-build;0.1-SNAPSHOT [runtime]
 [debug] == resolving dependencies for default#quality-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#quality-build;0.1-SNAPSHOT->org.wartremover#sbt-wartremover;2.1.1 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] == resolving dependencies default#quality-build;0.1-SNAPSHOT->org.wartremover#sbt-wartremover;2.1.1 [compile->runtime]
+[debug] == resolving dependencies default#quality-build;0.1-SNAPSHOT->org.wartremover#sbt-wartremover;2.1.1 [compile->compile]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] == resolving dependencies default#quality-build;0.1-SNAPSHOT->org.wartremover#sbt-wartremover;2.1.1 [compile->master]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
 [debug] resolving dependencies for configuration 'test'
 [debug] == resolving dependencies for default#quality-build;0.1-SNAPSHOT [test]
 [debug] == resolving dependencies for default#quality-build;0.1-SNAPSHOT [runtime]
 [debug] == resolving dependencies for default#quality-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#quality-build;0.1-SNAPSHOT->org.wartremover#sbt-wartremover;2.1.1 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] == resolving dependencies default#quality-build;0.1-SNAPSHOT->org.wartremover#sbt-wartremover;2.1.1 [compile->runtime]
+[debug] == resolving dependencies default#quality-build;0.1-SNAPSHOT->org.wartremover#sbt-wartremover;2.1.1 [compile->compile]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] == resolving dependencies default#quality-build;0.1-SNAPSHOT->org.wartremover#sbt-wartremover;2.1.1 [compile->master]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
 [debug] resolving dependencies for configuration 'provided'
 [debug] == resolving dependencies for default#quality-build;0.1-SNAPSHOT [provided]
 [debug] == resolving dependencies default#quality-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->default(compile)]
@@ -1819,6 +1883,22 @@
 [debug] resolving dependencies for configuration 'compile-internal'
 [debug] == resolving dependencies for default#quality-build;0.1-SNAPSHOT [compile-internal]
 [debug] == resolving dependencies for default#quality-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#quality-build;0.1-SNAPSHOT->org.wartremover#sbt-wartremover;2.1.1 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] == resolving dependencies default#quality-build;0.1-SNAPSHOT->org.wartremover#sbt-wartremover;2.1.1 [compile->runtime]
+[debug] == resolving dependencies default#quality-build;0.1-SNAPSHOT->org.wartremover#sbt-wartremover;2.1.1 [compile->compile]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] == resolving dependencies default#quality-build;0.1-SNAPSHOT->org.wartremover#sbt-wartremover;2.1.1 [compile->master]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
 [debug] == resolving dependencies for default#quality-build;0.1-SNAPSHOT [optional]
 [debug] == resolving dependencies for default#quality-build;0.1-SNAPSHOT [provided]
 [debug] == resolving dependencies default#quality-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->default(compile)]
@@ -3709,12 +3789,48 @@
 [debug] == resolving dependencies for default#quality-build;0.1-SNAPSHOT [runtime-internal]
 [debug] == resolving dependencies for default#quality-build;0.1-SNAPSHOT [runtime]
 [debug] == resolving dependencies for default#quality-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#quality-build;0.1-SNAPSHOT->org.wartremover#sbt-wartremover;2.1.1 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] == resolving dependencies default#quality-build;0.1-SNAPSHOT->org.wartremover#sbt-wartremover;2.1.1 [compile->runtime]
+[debug] == resolving dependencies default#quality-build;0.1-SNAPSHOT->org.wartremover#sbt-wartremover;2.1.1 [compile->compile]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] == resolving dependencies default#quality-build;0.1-SNAPSHOT->org.wartremover#sbt-wartremover;2.1.1 [compile->master]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
 [debug] == resolving dependencies for default#quality-build;0.1-SNAPSHOT [optional]
 [debug] resolving dependencies for configuration 'test-internal'
 [debug] == resolving dependencies for default#quality-build;0.1-SNAPSHOT [test-internal]
 [debug] == resolving dependencies for default#quality-build;0.1-SNAPSHOT [test]
 [debug] == resolving dependencies for default#quality-build;0.1-SNAPSHOT [runtime]
 [debug] == resolving dependencies for default#quality-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#quality-build;0.1-SNAPSHOT->org.wartremover#sbt-wartremover;2.1.1 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] == resolving dependencies default#quality-build;0.1-SNAPSHOT->org.wartremover#sbt-wartremover;2.1.1 [compile->runtime]
+[debug] == resolving dependencies default#quality-build;0.1-SNAPSHOT->org.wartremover#sbt-wartremover;2.1.1 [compile->compile]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] == resolving dependencies default#quality-build;0.1-SNAPSHOT->org.wartremover#sbt-wartremover;2.1.1 [compile->master]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
 [debug] == resolving dependencies for default#quality-build;0.1-SNAPSHOT [optional]
 [debug] == resolving dependencies for default#quality-build;0.1-SNAPSHOT [provided]
 [debug] == resolving dependencies default#quality-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->default(compile)]
@@ -5956,6 +6072,12 @@
 [debug] ignoring unhandled DependencyDescriptorMediator: class sbt.IvyScala$OverrideScalaMediator
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
+[debug] 		tried https://repo1.maven.org/maven2/org/wartremover/sbt-wartremover_2.10_0.13/2.1.1/sbt-wartremover-2.1.1.jar
+[info] downloading https://repo1.maven.org/maven2/org/wartremover/sbt-wartremover_2.10_0.13/2.1.1/sbt-wartremover-2.1.1.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/wartremover/sbt-wartremover_2.10_0.13/2.1.1/sbt-wartremover-2.1.1.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/wartremover/sbt-wartremover_2.10_0.13/2.1.1/sbt-wartremover-2.1.1.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/wartremover/sbt-wartremover_2.10_0.13/2.1.1/sbt-wartremover-2.1.1.jar
+[info] 	[SUCCESSFUL ] org.wartremover#sbt-wartremover;2.1.1!sbt-wartremover.jar (78ms)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.10.6!scala-library.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#sbt;0.13.15!sbt.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#main;0.13.15!main.jar
@@ -6009,7 +6131,7 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#template-resolver;0.1!template-resolver.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.6!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 873ms :: artifacts dl 16ms
+[debug] :: resolution report :: resolve 2742ms :: artifacts dl 93ms
 [debug] 	report for default#quality-build;0.1-SNAPSHOT compile produced in C:\Users\Administrator\Documents\GitHub\Quality\project\target\resolution-cache\reports\default-quality-build-compile.xml
 [debug] 	report for default#quality-build;0.1-SNAPSHOT runtime produced in C:\Users\Administrator\Documents\GitHub\Quality\project\target\resolution-cache\reports\default-quality-build-runtime.xml
 [debug] 	report for default#quality-build;0.1-SNAPSHOT test produced in C:\Users\Administrator\Documents\GitHub\Quality\project\target\resolution-cache\reports\default-quality-build-test.xml
@@ -6023,5 +6145,5 @@
 [debug] 	report for default#quality-build;0.1-SNAPSHOT docs produced in C:\Users\Administrator\Documents\GitHub\Quality\project\target\resolution-cache\reports\default-quality-build-docs.xml
 [debug] 	report for default#quality-build;0.1-SNAPSHOT pom produced in C:\Users\Administrator\Documents\GitHub\Quality\project\target\resolution-cache\reports\default-quality-build-pom.xml
 [debug] 	report for default#quality-build;0.1-SNAPSHOT scala-tool produced in C:\Users\Administrator\Documents\GitHub\Quality\project\target\resolution-cache\reports\default-quality-build-scala-tool.xml
-[debug] 	resolve done (873ms resolve - 16ms download)
+[debug] 	resolve done (2742ms resolve - 93ms download)
 [info] Done updating.
